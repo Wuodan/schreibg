@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteBase /
+
+RewriteRule ^.*robots.txt$ cms/robots.txt [L]
+RewriteRule ^([0-9]*).xml$ cms/front_content.php?idart=$1 [QSA,L]
+
+RewriteRule ^image/([0-9]*)/([0-9]*)/([0-9])/(.*) cms/front_content.php?imageresize=1&w=$1&h=$2&b=$3&p=cms/upload/$4 [QSA,L]
+
+RewriteRule ^conlib/.*$ - [L]
+RewriteRule ^contenido/.*$ - [L]
+RewriteRule ^docs/.*$ - [L]
+RewriteRule ^pear/.*$ - [L]
+RewriteRule ^js/.*$ - [L]
+RewriteRule ^.*\.(php|jpg|ico|jpeg|gif|css|swf|doc|txt|xls|png|js|xml|pdf).*$ - [L]
+
+RewriteRule ^$ cms/front_content.php?idart=40 [QSA,L]
+RewriteRule ^([0-9]*).html$ cms/front_content.php?idart=$1 [QSA,L]
+RewriteRule ^([0-9]*).xml$ cms/front_content.php?idart=$1 [QSA,L]
+RewriteRule ^(.*)/index.html$ cms/front_content.php?catname=$1 [QSA,L]
+RewriteRule ^(.*)/([a-zA-Z0-9-]*).html$ cms/front_content.php?artname=$2&catname=$1 [QSA,L]
+RewriteRule ^(.*)$ cms/front_content.php?catname=$1 [QSA,L]
+</IfModule> 
