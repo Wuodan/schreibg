@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+schreibgewandt.ch	TRUE	/	FALSE	1999999999	sid_1_1	a6b47e6a04a391178c1ac8c636489e99
+

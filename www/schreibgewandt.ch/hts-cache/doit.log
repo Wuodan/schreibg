@@ -1,0 +1,8 @@
+http://schreibgewandt.ch/ -O /root/tests +*.schreibgewandt.ch/* -v
+File generated automatically on Tue, 19 Jun 2012 04:34:15, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
